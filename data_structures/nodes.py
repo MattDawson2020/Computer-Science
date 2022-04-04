@@ -3,10 +3,10 @@ class Node:
     self.value = value
     self.link_node = link_node
     
-  def set_link_node(self, link_node):
+  def set_next_node(self, link_node):
     self.link_node = link_node
     
-  def get_link_node(self):
+  def get_next_node(self):
     return self.link_node
   
   def get_value(self):
@@ -17,10 +17,10 @@ yacko = Node("likes to yak")
 wacko = Node("has a penchant for hoarding snacks")
 dot = Node("enjoys spending time in movie lots")
 
-yacko.set_link_node(dot)
-dot.set_link_node(wacko)
+yacko.set_next_node(dot)
+dot.set_next_node(wacko)
 
-dots_data = yacko.get_link_node().get_value()
-wackos_data = dot.get_link_node().get_value()
+dots_data = yacko.get_next_node().get_value()
+wackos_data = dot.get_next_node().get_value()
 print(dots_data)
 print(wackos_data)
