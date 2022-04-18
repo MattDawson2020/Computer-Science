@@ -28,6 +28,6 @@ def bubble_sort(arr):
         
   print("POST-OPTIMIZED ITERATION COUNT: {0}".format(iteration_count))
 
-bubble_sort_unoptimized(nums.copy())
-bubble_sort(nums)
+bubble_sort_unoptimized(nums.copy()) # 72 iterations
+bubble_sort(nums) # 36 iterations
 print("POST SORT: {0}".format(nums))
